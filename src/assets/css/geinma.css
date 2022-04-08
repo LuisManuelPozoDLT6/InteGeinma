@@ -1,0 +1,70 @@
+.card-custom {
+    overflow: hidden;
+    min-height: 350px;
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+  }
+  
+  .card-custom-img {
+    height: 135px;
+    min-height: 135px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-color: inherit;
+    
+    
+  }
+  
+  /* First border-left-width setting is a fallback */
+  .card-custom-img::after {
+    position: absolute;
+    content: '';
+    top: 101px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-top-width: 50px;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 540px;
+    border-color: inherit;
+  }
+  
+  .card-custom-avatar img {
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3) !important;
+    position: absolute;
+    top: 30px;
+    left: 1.25rem;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  div :hover{
+    box-shadow: none;
+  }
+
+  .bg-verde{
+    background-color: #009475;
+  }
+
+  .bg-azul{
+    background-color: #002e60;
+  }
+
+  .size{
+    height:300px;
+    width:300px;
+    object-fit: cover;
+  }
+
+  .imgRedonda {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    object-fit: cover;
+}
